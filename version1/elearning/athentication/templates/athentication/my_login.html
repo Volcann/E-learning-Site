@@ -1,0 +1,8 @@
+<html>
+    <h1> My login </h1>
+    <form method-"POST"' autocomplete-"off">
+        {% csrf_token %}
+        {{loginform.as_p}}
+        <input type="submit" value="login">
+    </form>
+</html>
